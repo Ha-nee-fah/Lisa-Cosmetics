@@ -574,9 +574,17 @@ span{
         grid-template-columns: repeat(auto-fit, minmax (250px,auto));
     }
    .sub-header{
-    height:50vh;
-}
+    height:70vh;
+    }
     .home{
-    height:60vh;
+    height:80vh;
+    }
+}
+    @media (max-width:280px){
+    .sub-header{
+    height:100vh;
+    }
+    .home{
+    height:100vh;
     }
 }
