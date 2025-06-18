@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Lisa Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <a href="#"><img src="Images/logo.png" alt="my logo"></a>
+        <div class="navMenu" id="navMenu">
+             <i class='bx bx-window-close' onclick="closeMenu()"></i>
+            <ul>
+  <li><a href="index.html">Home</a></li>
+ <li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="stores.html">Stores</a></li>
+<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+         <i class='bx bx-menu' onclick="openMenu()"></i>
+    </header>
+    
+    <!-- sub header session -->
+    <section class="sub-header" id="sub-header">
+              <h1>Contact<span> Me!</span></h1>
+    </section>
+ 
+    <!-- Contact session -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+         <h2>Shop <span> With Me!</span></h2>
+        <h4>Whatever your order may be</h4>
+        <div class="list">
+        <li><a href="https://mail.google.com">liuslisa2@gmail.com</a></li>
+         <li><a href="https://mail.google.com">Like, Refer & Order</a></li>
+        </div>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <input type="number" id="phone" name="phone" placeholder="Your phone number">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="How can i help you?" required></textarea>
+                <button id="send-button" class="submit">Send Message</button>
+              </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+    <div class="attribution">
+        <p>Copyright @Lisa Cosmetics. All rights reserved.</p>
+    </div>
+    <div class="move-up">
+        <a href="#sub-header"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+    </footer>
+    
+    <!-- Js for toggle menu -->
+<script>
+    var navMenu =document.getElementById("navMenu");
+    
+    function openMenu(){
+        navMenu.style.right="0";
+    }
+    function closeMenu(){
+        navMenu.style.right="-200px";
+    }
+    const form = document.getElementById('contact-form');
+const sendButton = document.getElementById('send-button');
+
+sendButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  
+  const mailToLink = `mailto:liuslisa2@gmail.com?subject=Message from ${name}&body=Name: ${name}%0APhone Number: ${phone}%0AEmail: ${email}%0AMessage: ${message}`;
+  
+  window.location.href = mailToLink;
+});
+</script>
+</body>
+</html>

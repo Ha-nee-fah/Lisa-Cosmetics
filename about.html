@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Lisa website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <a href="#"><img src="Images/logo.png" alt="my logo"></a>
+        <div class="navMenu" id="navMenu">
+             <i class='bx bx-window-close' onclick="closeMenu()"></i>
+            <ul>
+  <li><a href="index.html">Home</a></li>
+ <li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="stores.html">Stores</a></li>
+<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+         <i class='bx bx-menu' onclick="openMenu()"></i>
+    </header>
+    
+    <!-- sub header session -->
+    <section class="sub-header" id="sub-header">
+            <h1>About <span>Lisa Cosmetics</span></h1>
+    </section>
+ 
+    <!-- about session -->
+     <section class="about" id="about">
+        <div class="about-img">
+         <img src="Images/about img.jpg" alt="second image">
+        </div>
+        <div class="about-text">
+              <h4> <span>I'm a </span>Fashion and Beauty Connoisseur</h4>
+            <p>Lisa Cosmetics is a premier beauty destination dedicated to providing exceptional products and unparalleled customer service. Our mission is to inspire confidence and self-expression through beauty, fostering a community that celebrates individuality and inclusivity. With a keen eye for innovation and a commitment to excellence, we strive to be your trusted partner in the pursuit of beauty and wellness.</p>
+            <p>Lisa Cosmetics is a proudly online-based business, dedicated to providing you with the best cosmetics and beauty products from the comfort of your home. Our founder, Lisa, works tirelessly from her home office to curate a selection of top-quality products, ensuring that you receive the best service and satisfaction.  </p>
+          <a href="services.html" class="btn">More About</a>
+        </div>
+    </section>
+    <section class="others" id="others">
+        <div class="sub-text-title">
+            <h2>Why <span>Me</span></h2>
+        </div>
+        <div class="others-text">
+            <h3><span>Our Unique Selling Points</span>  </h3>
+            <p>-High-quality materials and craftsmanship<br><br>
+               -Unique and trendy designs<br><br>
+               -Elegant packaging and alluring fragrances<br> 
+            </p>
+            <a href="" class="btn">Lisa's story</a>
+            <p>Lisa Stores was born out of Lisa's love for jewelry and her desire to share that passion with others. From humble beginnings to a thriving online presence, Lisa Stores has become a go-to destination for those seeking a, high-quality jewelry pieces.Each piece is meticulously crafted to ensure exceptional quality and durability.
+            </p>  
+        </div>
+        <div>
+          <a href="contact.html" class="btn">Get in touch</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+    <div class="attribution">
+        <p>Copyright @Lisa Cosmetics. All rights reserved.</p>
+    </div>
+    <div class="move-up">
+        <a href="#sub-header"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+    </footer>
+    
+    <!-- Js for toggle menu -->
+<script>
+    var navMenu =document.getElementById("navMenu");
+    
+    function openMenu(){
+        navMenu.style.right="0";
+    }
+    function closeMenu(){
+        navMenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
