@@ -548,9 +548,6 @@ span{
     .footer{
         padding:30px 20%;
     }
-    .sub-header{
-    height:50vh;
-}
 }
 @media (max-width:480px) {
     .home h1{
@@ -573,13 +570,5 @@ span{
     }
     .portfolio-content{
         grid-template-columns: repeat(auto-fit, minmax (250px,auto));
-    }
-}
-    @media (max-width:350px){
-    .sub-header{
-    height:100vh;
-    }
-    .home{
-    height:100vh;
     }
 }
