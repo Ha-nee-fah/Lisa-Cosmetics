@@ -514,7 +514,7 @@ span{
         display: block;
     }
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     .header .bx {
         display: block;
         color: var(--text-color-one);
@@ -551,6 +551,7 @@ span{
     .sub-header{
     height:50vh;
 }
+}
 @media (max-width:480px) {
     .home h1{
         font-size: 25px;
@@ -573,14 +574,8 @@ span{
     .portfolio-content{
         grid-template-columns: repeat(auto-fit, minmax (250px,auto));
     }
-   .sub-header{
-    height:70vh;
-    }
-    .home{
-    height:80vh;
-    }
 }
-    @media (max-width:280px){
+    @media (max-width:350px){
     .sub-header{
     height:100vh;
     }
