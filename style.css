@@ -130,7 +130,7 @@ span{
 }
 .btn{
     display:inline-block;
-    padding:12px 6px;
+    padding:20px 15px;
     background-color:var(--main-color);
     border-radius:5px;
     font-size:1rem;
@@ -323,12 +323,13 @@ span{
 }
 .contact-form ::placeholder{
     color: var(--text-color-one);
+    height:50rem;
 }
 .contact-form form input,
 .contact-form form textarea{
     width:100%;
     padding:14px;
-    height:30px;
+    height:50px;
     background-color:var(--bg-color-one);
     color:var(--text-color-one);
     border:none;
@@ -391,6 +392,9 @@ span{
     font-size:15px;
     color:var(--text-color-one);
     background-color:var(--main-color);
+}
+input{
+    height:10rem;
 }
 
 /************* webpages *************/
@@ -508,10 +512,12 @@ span{
         padding:30px 20%;
     }
      .navMenu ul {
-        padding: 30px;
+        padding: 20px;
     }
-    .navMenu ul li {
-        display: block;
+     .navMenu ul li {
+    display:inline-block;
+    padding:4px 4px;
+    margin:0 15px;
     }
 }
 @media (max-width:700px){
